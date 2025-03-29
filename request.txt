@@ -1,0 +1,7 @@
+FastAPI
+peewee
+uvicorn
+MySQL
+MySQL-connector
+mysqlclient
+Jinja2
