@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    width: 150px;
+    background-color: #062c4f;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #f0f0f0;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+menu li {
+    margin: 30px 0;
+}
+
+.logo {
+    width: 70%;
+    height: auto;
+    margin-left: 25px;
+}
+
+.logo_dash {
+    width: 10%;
+    height: auto;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: #062c4f;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.squ {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #062c4f;
+    color: #062c4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.tt {
+    padding-left: 40px;
+    color: #818b94;
+    padding-top: 300px;
+}
+
+.content {
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.squares-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+
+.square-item-1, 
+.square-item-2, 
+.square-item-3 {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.square-item-4 {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.square-item-5 {
+    width: 689px;
+    height:250px;
+    border: 2px solid black;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.text-1 {
+    font-size: 100px;
+    padding-left: 0px;
+}
+
+.text-2 {
+    margin-top: 30px;
+}

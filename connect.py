@@ -19,7 +19,7 @@ class Project(DateBase):
     created_time = DateTimeField()
     delete_time = DateTimeField()
     start_scheduled_date = DateField()
-    finish_sheduled_date = DateField()
+    finish_schedule_date = DateField()
     description = CharField()
     creator_employee_id = IntegerField()
     responsible_employe_id = IntegerField()
