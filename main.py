@@ -24,8 +24,18 @@ async def str_dashbord(request: Request):
 
 @app.get('/taskstr', response_class=HTMLResponse)
 async def str_task(request: Request):
+    tata = TaskTask.select()
+    tass = [{'id': tt.id,
+             'idtask': tt.idtask,
+             'nubver': tt.nubver,
+             'vaib': tt.vaib,
+             'opinasin': tt.opinasin,
+             'name': tt.name,
+             'dedline': tt.dedline}
+            for tt in tata]
     return templates.TemplateResponse('task.html',
-                                      {'request': request})
+                                      {'request': request,
+                                       'tata': tass})
 
 
 @app.get('/calendar', response_class=HTMLResponse)

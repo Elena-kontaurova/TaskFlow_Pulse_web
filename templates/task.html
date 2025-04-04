@@ -44,7 +44,20 @@
         </div>
         <div class="content">
             <h1>Список задач</h1>
-            <p>Страница списка задач</p>
+            <div class="cont">
+                {% for tt in tata %}
+                <div class="num_cont">
+                    <div class="nub_task">{{ tt.nubver }}</div>
+                    <div class="vaib_task">{{ tt.vaib }}</div>
+                    <div class="opi_task">{{ tt.opinasin }}</div>
+                    <div class="name_task">{{ tt.name }}</div>
+                    <div class="ded_task">{{ tt.dedline }}</div>
+                    <div class="logo_skip">
+                        <img src="/static/image/app_next_icon.png", alt="logo_sk", class="logo-sk">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </body>
