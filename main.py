@@ -91,7 +91,7 @@ async def get_task():
 
 @app.get('/tasktask')
 async def crop_task():
-    tata = TaskTask.select()
+    task = TaskTask.select()
     return [{'id': tt.id,
              'idtask': tt.idtask,
              'nubver': tt.nubver,
@@ -99,4 +99,4 @@ async def crop_task():
              'opinasin': tt.opinasin,
              'name': tt.name,
              'dedline': tt.dedline}
-            for tt in tata]
+            for tt in task]
